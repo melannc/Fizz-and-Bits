@@ -1,0 +1,278 @@
+/* --- Global Styles --- */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f3ebc4;
+    color: #333;
+    margin: 0;
+}
+/* --- Layout & Container --- */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.container-receipt {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+
+    width: 100%;
+}
+
+.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.cart-summary {
+  margin-top: 30px;
+  text-align: right;
+}
+
+/* Browse button */
+.browse-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  background: #EAD9A3;
+  color: #7A5C1E;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.browse-btn i {
+  font-size: 18px;
+}
+
+/* hover */
+.browse-btn:hover {
+  background: var(--accent);
+  color: white;
+}
+
+
+.page-title {
+    text-align: center;
+    font-size: 4.5rem;
+    letter-spacing: 2px;
+    font-family: 'Surimi', sans-serif;
+    color: #f39d12;
+}
+
+/* Progress Bar */
+.progress-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    font-size: 12px;
+}
+
+.back-to-cart-container {
+    width: 100%;
+    max-width: 450px;   
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: flex-start;  
+}
+
+.line { width: 50px; height: 2px; margin: 0 10px; border-top: 2px dashed #e0d5b3;}
+.line.active { background: #F9A11D; }
+.step { color: #e0d5b3; }
+.step.active { color: #F9A11D; font-weight: bold; }
+
+
+/* Grid Layout */
+.checkout-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 40px;
+
+    max-width: 900px;      
+    margin: 0 auto;        
+}
+
+/* --- Form Elements (Pill Style) --- */
+.pill-input {
+    background-color: #ffe2b4 !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 15px 20px !important;
+    width: 100%;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.row { display: flex; gap: 10px; }
+
+/* --- Shipping & Payment Options (Consolidated Pill Style) --- */
+.shipping-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffe2b4; /* Default Grey */
+    border-radius: 12px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.shipping-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Red Radio Buttons */
+.shipping-item input[type="radio"] {
+    accent-color: #f39d12; /* Red dot for selection */
+    width: 18px;
+    height: 18px;
+}
+
+/* Highlight Selected Pill */
+.shipping-item:has(input:checked) {
+    background-color: #ffe2b4 !important;
+    border: 1px solid #ffc15c;
+}
+
+.shipping-item.selected {
+    background-color: #ffe2b4 !important;
+    border: 1px solid #999;
+}
+
+.shipping-price {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Update Totals Button */
+.btn-update {
+    display: inline-block;
+    margin: 10px 0 25px 0;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #555;
+    border: 1.5px solid #ffc15c;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-update:hover {
+    background-color: #ffe2b4;
+    border-color: #777;
+}
+
+/* --- Order Summary (Sidebar) --- */
+.summary-section {
+    background: transparent;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.img-container {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    border: 2px solid #ffc15c;
+    border-radius: 12px;
+}
+
+.item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.qty-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: #ffc15c;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+}
+
+.item-info { flex-grow: 1; }
+
+.total-row { 
+    display: flex; 
+    justify-content: space-between; 
+    margin: 8px 0; 
+}
+
+.grand-total {
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* --- Action Buttons & Links --- */
+.btn-complete {
+    background: #095f2e;
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: 'Surimi', sans-serif;
+    text-transform: uppercase;
+}
+
+.back-link {
+    text-decoration: none;
+    color: #777;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+}
+
+.arrow-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #777;
+    border-radius: 8px;
+    font-size: 1.2rem;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+    .checkout-grid { grid-template-columns: 1fr; }
+}

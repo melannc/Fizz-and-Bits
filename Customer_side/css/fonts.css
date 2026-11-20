@@ -1,0 +1,70 @@
+/* * {
+    font-family: 'Surimi', sans-serif;
+    font-weight: 400;
+} */
+
+@font-face {
+  font-family: 'Surimi';
+  src: url('../fonts/Surimi-regular.otf') format('opentype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Surimi';
+  src: url('../fonts/Surimi-bold.otf') format('opentype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-surimi {
+  font-family: 'Surimi', sans-serif;
+}
+
+.font-surimi-sidebar {
+  font-family: 'Surimi', sans-serif;
+  font-size: 1.3rem;
+}
+
+.font-surimi-title {
+  font-family: 'Surimi', sans-serif;
+  font-size: 2.5rem;
+}
+
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-poppins-btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #F5F0D9;
+}
+
+.font-surimi-login{
+  font-family: 'Surimi', sans-serif;
+  color: #017B39;
+}

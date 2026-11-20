@@ -1,0 +1,111 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Page background */
+body {
+    background-color: #F3EBC4; /* light beige */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: clamp(200px, 12vw, 350px);
+    height: auto;
+    align-items: center;
+}
+
+/* Form container */
+form {
+    background-color: #0c7a3b; /* green */
+    padding: 40px 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+/* Title */
+.form-title {
+    color: #F3EBC4;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Labels */
+label {
+    display: block;
+    text-align: left;
+    margin: 10px 0 5px;
+    color: #F3EBC4;
+    font-size: 14px;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #E9D06C;
+    color: #B27212;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Login button */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #f39c12; /* orange */
+    border: none;
+    border-radius: 6px;
+    color: #F3EBC4;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #e67e22;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+    background-color: #E9D06C;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #B27212;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;             
+    background-color: #E9D06C; 
+    color: #B27212;               
+}
+
+input::placeholder {
+    color: #7a6f3b; 
+    opacity: 1;   
+}
+
+.error-message {
+    margin-top: 10px;
+    color: #ffdddd;
+    background-color: #c0392b;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 13px;
+}

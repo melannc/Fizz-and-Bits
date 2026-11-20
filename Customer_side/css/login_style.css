@@ -1,0 +1,144 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background-color: #F5F0D9;
+}
+
+/* LEFT SIDE */
+.left {
+    width: 50%;
+    background: #017b38;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Space around the image */
+}
+
+/* Specific styling for the logo */
+.login-logo {
+    max-width: 250px; /* Set your desired maximum width */
+    height: auto;     /* Maintain the aspect ratio */
+    margin-bottom: 20px; /* Space between logo and tagline */
+    display: block;   /* Remove any bottom whitespace from inline images */
+}
+
+.left h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.left p {
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+/* RIGHT SIDE */
+.right {
+    width: 50%;
+    background: #F5F0D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 300px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+}
+
+/* Input group container */
+.input-group {
+    margin: 10px 0;
+}
+
+/* Inputs */
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #D8C894; /* subtle border to distinguish the field */
+    background-color: #F3EBC4;  /* your desired bg color */
+    color: #B27212;             /* brand brown text */
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Placeholder color */
+.input-group input::placeholder {
+    color: #7a6f3b; /* subtle darker beige */
+    opacity: 1;
+}
+
+/* Input focus effect */
+.input-group input:focus {
+    outline: none;
+    border-color: #F9A11D;  /* highlight border in brand orange */
+    box-shadow: 0 0 5px rgba(249, 161, 29, 0.4); /* subtle glow */
+    background-color: #F9E77E; /* slightly lighter bg on focus */
+    color: #B27212;
+}
+
+.forgot {
+    font-size: 12px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.forgot a {
+    text-decoration: none;
+    color:#B27212;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #F9A11D;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background: #ca8215;
+}
+
+.divider {
+    margin: 15px 0;
+    font-size: 12px;
+    color: gray;
+}
+
+.social button {
+    margin-top: 8px;
+    background: #e0e0e0;
+}
+
+.signup {
+    margin-top: 10px;
+    font-size: 12px;
+    color:#B27212;
+}
+
+.signup a {
+    text-decoration: none;
+    color: #f3db7e;
+    font-weight: bold;
+}

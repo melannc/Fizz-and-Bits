@@ -1,0 +1,481 @@
+#content {
+    width: calc(100% - 260px);
+    margin-left: clamp(200px, 20vw, 260px);
+    padding: 30px;
+    background: #F5F0D9;
+    min-height: 100vh;
+}
+
+/* ================= LAYOUT ================= */
+
+.menu-layout{
+display:flex;
+gap:35px;
+align-items:flex-start;
+color: #7A5C1E;
+}
+
+/* ================= FILTER ================= */
+
+.menu-filter{
+width:220px;
+background:#E9CC70; /* box color */
+padding:20px;
+border-radius:12px;
+height:fit-content;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.08);
+}
+
+.menu-filter{
+width:220px;
+background:#E9CC70 ;
+padding:20px;
+border-radius:12px;
+height:fit-content;
+}
+
+.menu-filter h3{
+margin-bottom:10px;
+font-size:20px;
+}
+
+.menu-filter h4{
+margin-top:15px;
+margin-bottom:8px;
+}
+
+.menu-filter label{
+display:flex;
+align-items:center;
+gap:8px;
+margin-bottom:8px;
+}
+
+.menu-filter input[type="radio"],
+.menu-filter input[type="checkbox"]{
+flex-shrink:0;
+}
+
+/* ================= PANEL ================= */
+
+.menu-panel{
+flex:1;
+background:#E9CC70;
+padding:25px;
+border-radius:12px;
+}
+
+/* ================= MENU TOOLBAR ================= */
+
+.menu-toolbar{
+display:flex;
+justify-content:space-between;
+margin-bottom:25px;
+}
+
+.menu-search{
+display:flex;
+align-items:center;
+background:#EAD17F;
+padding:6px;
+border-radius:10px;
+}
+
+.menu-search i{
+margin-left:6px;
+margin-right:6px;
+}
+
+.menu-search input{
+border:none;
+background:transparent;
+padding:8px;
+outline:none;
+}
+
+.menu-search button{
+background:#F79B1E;
+border:none;
+color:white;
+padding:7px 14px;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* ================= GRID ================= */
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+/* ================= CARD ================= */
+
+
+.menu-img{
+    background:#F79B1E;
+    padding:8px;
+    border-radius:12px;
+    width: 95%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.menu-img img{
+    width:100%;
+    border-radius:8px;
+    height:170px;
+    object-fit:cover;
+}
+
+/* INFO CARD */
+
+.menu-info{
+    position: relative;
+    background:#EFE7CF;
+    margin-top:-35px;
+    padding:18px;
+    border-radius:12px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+.menu-info h3{
+margin:0;
+}
+
+.category{
+color:#F79B1E;
+font-size:14px;
+margin-top:4px;
+}
+
+.menu-bottom{
+display:flex;
+justify-content:space-between;
+margin-top:10px;
+align-items:center;
+}
+
+.price{
+color:#F79B1E;
+font-weight:bold;
+}
+
+.stars {
+    display: flex;
+    gap: 3px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.stars i {
+    font-size: 16px;
+    color: #B27212;
+}
+
+.stars .bxs-star {
+    color: #F9A11D;
+}
+
+.stars small {
+    margin-left: 6px;
+    font-size: 12px;
+    color: #7A5C1E;
+}
+
+/* ================= FOOTER ================= */
+
+.menu-footer{
+margin-top:25px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.badge{
+background:#F79B1E;
+color:white;
+padding:4px 8px;
+border-radius:6px;
+}
+
+.pagination button{
+border:none;
+padding:6px 10px;
+border-radius:6px;
+background:#EAD17F;
+cursor:pointer;
+}
+
+.pagination .active{
+background:#F79B1E;
+color:white;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:25px;
+}
+
+/* LEFT SIDE */
+
+.header-left h2{
+color:#F9A11D;
+font-size:40px;
+line-height:1.1;
+}
+
+.header-left p{
+color:#F9A11D;
+font-size:16px;
+margin-top:4px;
+}
+
+/* RIGHT SIDE */
+
+.header-right{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+/* ================= SEARCH BAR ================= */
+
+.search-wrapper{
+position:relative;
+display:flex;
+align-items:center;
+}
+
+.search-wrapper i{
+position:absolute;
+left:14px;
+font-size:18px;
+color:rgba(178,114,18,0.6);
+}
+
+.search-bar{
+padding:10px 14px 10px 40px;
+border-radius:10px;
+border:2px solid transparent;
+width:260px;
+background:#F3EBC4;
+color:#C9BF8F;
+font-size:14px;
+font-family:'Poppins';
+}
+
+.search-bar::placeholder{
+color:rgba(178,114,18,0.6);
+}
+
+.search-bar:focus{
+outline:none;
+background:#f3ebc1;
+}
+
+/* ================= ACCOUNT ================= */
+
+.account-details{
+text-align:right;
+}
+
+.account-details h2{
+color:#F9A11D;
+font-size:18px;
+margin:0;
+}
+
+.account-details p{
+color:#F9A11D;
+font-size:14px;
+margin:0;
+}
+
+/* ================= PROFILE ================= */
+
+.header-right img{
+width:45px;
+height:45px;
+border-radius:12px;
+object-fit:cover;
+}
+
+/* ui added */
+
+/* smooth card animation */
+.menu-card{
+transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* card lift hover */
+.menu-card:hover{
+transform: translateY(-8px);
+box-shadow:0 12px 20px rgba(0,0,0,0.15);
+}
+
+/* image container */
+.menu-img{
+overflow:hidden;
+}
+
+/* image zoom hover */
+.menu-img img{
+transition: transform 0.3s ease;
+}
+/* 
+.menu-card:hover .menu-img img{
+transform:scale(1.05);
+} */
+
+/* menu title color */
+.menu-info h3{
+color:#B27212;
+}
+
+.menu-filter label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+    font-size:14px;
+    color:#7A5C1E;
+}
+
+.menu-filter input[type="radio"] + span{
+    width:18px;
+    height:18px;
+    border:2px solid #B27212;
+    border-radius:50%;
+    display:inline-block;
+    position:relative;
+    transition:all 0.2s ease;
+}
+
+/* inner dot */
+.menu-filter input[type="radio"]:checked + span::after{
+    content:"";
+    width:10px;
+    height:10px;
+    background:#F79B1E;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.menu-filter input[type="checkbox"] + span{
+    width:18px;
+    height:18px;
+    border:2px solid #B27212;
+    border-radius:5px;
+    display:inline-block;
+    position:relative;
+    transition:all 0.2s ease;
+}
+
+/* checkmark */
+.menu-filter input[type="checkbox"]:checked + span::after{
+    content:"✔";
+    font-size:12px;
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.menu-filter input[type="checkbox"]:checked + span{
+    background:#F79B1E;
+    border-color:#F79B1E;
+}
+
+.menu-filter input[type="radio"],
+.menu-filter input[type="checkbox"]{
+    display: none;
+}
+
+/* HIDE DEFAULT INPUT */
+.menu-filter input[type="radio"],
+.menu-filter input[type="checkbox"]{
+    display: none;
+}
+
+/* LABEL STYLE */
+.menu-filter label{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+    cursor:pointer;
+    font-size:14px;
+    color:#7A5C1E;
+    transition:0.2s;
+}
+
+.menu-filter label:hover{
+    transform:translateX(3px);
+}
+
+/* ================= RADIO ================= */
+
+.menu-filter input[type="radio"] + span{
+    width:18px;
+    height:18px;
+    border:2px solid #B27212;
+    border-radius:50%;
+    display:inline-block;
+    position:relative;
+    background:#fff6d6;
+}
+
+/* inner dot */
+.menu-filter input[type="radio"]:checked + span::after{
+    content:"";
+    width:10px;
+    height:10px;
+    background:#F79B1E;
+    border-radius:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+/* ================= CHECKBOX ================= */
+
+.menu-filter input[type="checkbox"] + span{
+    width:18px;
+    height:18px;
+    border:2px solid #B27212;
+    border-radius:5px;
+    display:inline-block;
+    position:relative;
+    background:#fff6d6;
+}
+
+/* checkmark */
+.menu-filter input[type="checkbox"]:checked + span{
+    background:#F79B1E;
+    border-color:#F79B1E;
+}
+
+/* check icon */
+.menu-filter input[type="checkbox"]:checked + span::after{
+    content:"✔";
+    font-size:12px;
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}

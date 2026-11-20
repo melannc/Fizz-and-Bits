@@ -1,0 +1,310 @@
+/* ================= ADD ITEM BUTTON ================= */
+
+.add-btn{
+background:#f48b19;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:8px;
+cursor:pointer;
+transition:all 0.2s ease;
+font-weight:500;
+}
+
+.add-btn:hover{
+background:#d97706;
+transform:translateY(-2px);
+box-shadow:0 6px 12px rgba(0,0,0,0.15);
+}
+
+
+/* ================= INVENTORY ACTIONS ================= */
+
+.inventory-actions{
+display:flex;
+gap:10px;
+margin-top:10px;
+}
+
+.inventory-actions button{
+border:none;
+padding:7px 12px;
+border-radius:6px;
+cursor:pointer;
+background:#f48b19;
+color:white;
+transition:background 0.2s ease;
+font-size:13px;
+}
+
+/* RESTOCK BUTTON HOVER */
+
+.inventory-actions button:not(.delete-btn):hover{
+background:#d97706;
+}
+
+
+/* ================= DELETE BUTTON ================= */
+
+.delete-btn{
+background:#e74c3c;
+color:white;
+border:none;
+padding:7px 12px;
+border-radius:6px;
+cursor:pointer;
+transition:background 0.2s ease;
+}
+
+.delete-btn:hover{
+background:#c0392b;
+}
+
+
+/* ================= STOCK STATUS ================= */
+
+.low-stock{
+background:#ff4d4d;
+color:white;
+padding:4px 10px;
+border-radius:6px;
+font-size:12px;
+font-weight:500;
+}
+
+.in-stock{
+background:#2ecc71;
+color:white;
+padding:4px 10px;
+border-radius:6px;
+font-size:12px;
+font-weight:500;
+}
+
+
+/* ================= MODAL OVERLAY ================= */
+
+.modal{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.45);
+backdrop-filter:blur(3px);
+justify-content:center;
+align-items:center;
+z-index:1000;
+animation:fadeIn 0.25s ease;
+}
+
+/* ================= DELETE MODAL STYLE ================= */
+
+.delete-modal{
+background:#fde2e2; /* soft red background */
+border:2px solid #f5b5b5;
+}
+
+/* delete modal title */
+
+.delete-modal h3{
+color:#b91c1c;
+}
+
+/* delete confirmation button */
+
+.delete-modal button:first-child{
+background:#e74c3c;
+}
+
+.delete-modal button:first-child:hover{
+background:#c0392b;
+}
+
+/* cancel button */
+
+.delete-modal button:last-child{
+background:#f48b19;
+}
+
+.delete-modal button:last-child:hover{
+background:#d97706;
+}
+
+
+/* ================= MODAL BOX ================= */
+
+.modal-content{
+  background:#fff1c5;   
+  color: #7A5C1E;
+  padding:35px;
+  border-radius:16px;
+  width:380px;
+  display:flex;
+  flex-direction:column;
+  gap:22px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.15);
+  animation:scaleIn 0.25s ease;
+  position:relative; /* important for X button */
+}
+
+.modal-content h3{
+margin:0;
+font-size:22px;
+font-weight:600;
+}
+
+.modal-content textarea {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    background: #D7CDAA;
+    font-family: 'Poppins';
+    font-size: 14px;
+    resize: none;
+    outline: none;
+}
+
+
+/* ================= MODAL X BUTTON ================= */
+
+.modal-content .modal-x{
+position:absolute;
+top:12px;
+right:16px;
+background:#f48b19;
+border:none;
+
+width:40px;
+height:40px;
+
+font-size:29px; 
+
+color:white;
+font-weight:bold;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+cursor:pointer;
+border-radius:10px;
+line-height:1;
+
+padding:0; 
+
+transition:all 0.2s ease;
+}
+
+.modal-content .modal-x:hover{
+background:#d80707;
+transform:scale(1.05);
+}
+
+
+/* ================= FORM ================= */
+
+.modal-content label{
+font-weight:500;
+font-size:14px;
+margin-bottom:6px;
+display:block;
+}
+
+.modal-content form{
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+.modal-content input{
+width:100%;
+}
+
+.modal-content form button{
+width:100%;
+max-width:100%;
+margin-top:10px;
+}
+
+.modal-content input,
+.modal-content select{
+padding:12px;
+border:1px solid #cfcfcf;
+border-radius:10px;
+width:100%;
+font-size:14px;
+background:#e2d7b6;   
+margin-bottom:14px;
+transition:border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.modal-content input:focus{
+outline:none;
+border-color:#f48b19;
+box-shadow:0 0 0 2px rgba(244,139,25,0.15);
+}
+
+
+/* ================= MODAL BUTTONS ================= */
+
+.modal-content button{
+background:#f48b19;
+border:none;
+color:white;
+padding:11px;
+border-radius:10px;
+cursor:pointer;
+font-size:14px;
+transition:background 0.2s ease;
+}
+
+.modal-content button:hover{
+background:#d97706;
+}
+
+
+/* DELETE CONFIRM BUTTON */
+
+.confirm-delete{
+background:#e74c3c;
+}
+
+.confirm-delete:hover{
+background:#c0392b;
+}
+
+
+/* DELETE BUTTON ROW */
+
+.modal-buttons{
+display:flex;
+gap:12px;
+justify-content:center;
+margin-top:10px;
+}
+
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes fadeIn{
+from{
+  opacity:0;
+}
+to{
+  opacity:1;
+}
+}
+
+@keyframes scaleIn{
+from{
+  transform:scale(0.9);
+  opacity:0;
+}
+to{
+  transform:scale(1);
+  opacity:1;
+}
+}

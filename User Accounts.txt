@@ -1,0 +1,21 @@
+
+Administrator Account
+Username: admin
+Password: adminPass
+
+Manager Account (admin)
+Username: manager
+Password: adminPass
+
+Customer Accounts Passwords:
+Username: ryan01
+Password: customerPass
+
+Username: juan01
+Password: customerPass
+
+Username: maria01
+Password: customerPass
+
+Username: bea01
+Password: customerPass

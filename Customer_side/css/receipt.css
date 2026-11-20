@@ -1,0 +1,34 @@
+/* Specific receipt styles to match image_9a394a.png */
+.receipt-container {
+    background: white;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 40px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+/* Simple jagged edge simulation */
+.receipt-container::before, .receipt-container::after {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; height: 10px;
+    background-size: 20px 20px;
+    background-repeat: repeat-x;
+}
+.receipt-container::before {
+    top: -10px;
+    background-image: linear-gradient(45deg, transparent 33.33%, white 33.33%, white 66.66%, transparent 66.66%), 
+                        linear-gradient(-45deg, transparent 33.33%, white 33.33%, white 66.66%, transparent 66.66%);
+}
+.receipt-container::after {
+    bottom: -10px;
+    background-image: linear-gradient(135deg, transparent 33.33%, white 33.33%, white 66.66%, transparent 66.66%), 
+                        linear-gradient(-135deg, transparent 33.33%, white 33.33%, white 66.66%, transparent 66.66%);
+}
+
+.receipt-container hr { border: none; border-top: 1px dashed #ccc; margin: 15px 0; }
+.total-row { display: flex; justify-content: space-between; margin-bottom: 5px; }
+table th, table td { padding: 8px 0; }
+
+.receipt-header { text-align: center; margin-bottom: 20px; }
+.barcode { width: 100%; margin-top: 20px; }
